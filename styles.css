@@ -2820,7 +2820,6 @@ span {
 #closeSignIn:hover {
     background-color: darkred;
 }
-
 .modal {
     display: none;
     position: fixed;
@@ -2831,7 +2830,6 @@ span {
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 10;
 }
-
 .modal-content {
     background-color: #fefefe;
     margin: 10% auto;
@@ -2840,7 +2838,6 @@ span {
     width: 50%;
     max-width: 500px;
 }
-
 .close {
     color: #ff1717;
     /* float: right; */
@@ -2848,7 +2845,6 @@ span {
     font-weight: bold;
     z-index: 10;
 }
-
 .close:hover,
 .close:focus {
     color: black;
@@ -2856,7 +2852,6 @@ span {
     cursor: pointer;
     /* z-index: 1000; */
 }
-
 @media screen and (max-width: 768px) {
     .sign-in-box {
         width: 90%;
@@ -2868,13 +2863,12 @@ span {
         padding: 10px;
     }
 }
-
 #crosss {
     font-size: 25px;
     font-weight: 700;
     color: red;
+    z-index: 100;
 }
-
 #crosss:hover {
     color: #4daa57;
 }

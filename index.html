@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+    <!-- navbar -->
     <div class="nav-v2__wrapper">
         <button class="nav-v2-burger" data-nav-v2-burger="" aria-label="Toggle mobile menu">
             <span></span>
@@ -20,11 +20,11 @@
             <div class="nav-v2-main__wrapper">
                 <ul class="nav-v2-main__list">
                     <li class="nav-v2-main__item nav-v2-main__item--sub-nav">
-                        <a data-nav-event-clicked="Hire Designers" href="https://dribbble.com/designers">Find
+                        <a data-nav-event-clicked="Hire Designers" href="">Find
                             designers</a>
                         <ul class="nav-v2-sub">
                             <li class="nav-v2-sub__item">
-                                <a class="nav-v2-sub__link" data-nav-event-clicked="Designer Search" href=""> Designer
+                                <a class="nav-v2-sub__link" data-nav-event-clicked="Designer Search" href="https://dribbble.com/designers"> Designer
                                     search <span class="nav-v2-sub__subtitle">Quickly find your next designer</span>
                                 </a>
                             </li>
@@ -37,7 +37,7 @@
                         </ul>
                     </li>
                     <li class="nav-v2-main__item">
-                        <a data-nav-event-clicked="Inspiration" href="/shots/popular">Inspiration</a>
+                        <a data-nav-event-clicked="Inspiration" href="/Inspiration">Inspiration</a>
                     </li>
                     <li class="nav-v2-main__item">
                         <a data-nav-event-clicked="Jobs" href="/jobs">Jobs</a>
@@ -48,7 +48,7 @@
                 </ul>
             </div>
         </nav>
-        <a class="nav-v2-logo" href="#" aria-label="Back to home page">
+        <a class="nav-v2-logo" href="" aria-label="Back to home page">
             <img src="/images/Screenshot 2024-09-08 114249.png" alt="Logo" width="105" height="45"
                 title="Dribbble: the community for graphic design">
         </a>
@@ -67,11 +67,12 @@
                     </svg>
                     <input class="nav-v2-search__input" type="text" placeholder="Search..." autocomplete="off" value="">
                 </form>
-                <a class="nav-v2-dynamic__login" data-nav-event-clicked="Sign in" href="#">Log in</a>
-                <a class="btn2 btn2--medium" data-nav-event-clicked="Sign Up" href="#">Sign up</a>
+                <a class="nav-v2-dynamic__login" data-nav-event-clicked="Sign in" id="openModalBtn">Log in</a>
+                <a class="btn2 btn2--medium" data-nav-event-clicked="Sign Up" id="openModalBtn" >Sign up</a>
             </div>
         </div>
     </div>
+<!-- header/body -->
     <div class="shot-content js-media-content">
         <div class="shot-content-container">
             <div class="shot-header js-shot-header">
@@ -83,10 +84,10 @@
                 <div class="sticky-header__container">
                     <div class="sticky-header__user-container">
                         <div class="sticky-header__avatar">
-                            <a class="hoverable url" rel="contact" title="Phil Goodwin" href="#">
+                            <a class="hoverable url" rel="contact" title="Shivanshu" href="/Shivanshu">
                                 <picture>
-                                    <img class="photo" alt="Phil Goodwin" width="48" height="48"
-                                        src="https://cdn.dribbble.com/users/97388/avatars/small/c53cbdc951c2cd1de4644c03440c6f19.png?1684329994">
+                                    <img class="photo" alt="shivanshu" width="48" height="48"
+                                        src="./images/PERSON.png">
                                 </picture>
                             </a>
                             <div class="sticky-header__team-avatar"><a class="hoverable url" rel="contact" href="#">
@@ -99,7 +100,7 @@
                         <div class="sticky-header__user-details">
                             <div class="sticky-header__name">
                                 <span>
-                                    <a class="hoverable" rel="contact" href="#">Phil Goodwin</a> for <a
+                                    <a class="hoverable" rel="contact" href="#">Shivanshu</a> for <a
                                         class="hoverable" rel="contact" href="#">Unfold</a>
                                 </span>
                             </div>
@@ -108,7 +109,7 @@
                                     <span class="sticky-header__available-circle"></span> Available for work </button>
                                 <div class=" sticky-header__follow">
                                     <a class="form-btn follow shot-follow sentence-btn " data-context="follow-user"
-                                        href="/follow" original-title="Follow Phil Goodwin">Follow</a>
+                                        href="#" original-title="Follow Phil Goodwin" id="click1">Follow</a>
                                     <a class="form-btn unfollow stripped-btn" href="/followers">
                                         <span></span>
                                     </a>
@@ -120,7 +121,7 @@
                         <div class="like-action-21444558 modal-true  shot-action">
                             <a class=" btn2--secondary-alt btn2--circle btn2--tertiary tipsy-mobile-disabled like-shot"
                                 rel="no-follow" title="Like this shot" data-signup-trigger="true"
-                                data-href="/signup/new" data-context="like-shot" href="/signup/new">
+                                data-href="/signup/new" data-context="like-shot" href="/signup/new" id="click2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
                                     fill="none" role="img" class="icon ">
                                     <path
@@ -132,7 +133,7 @@
                             </a>
                         </div>
                         <li>
-                            <a class=" btn2--circle btn2--tertiary" title="Save shot" href="/signup/new">
+                            <a class=" btn2--circle btn2--tertiary" title="Save shot" href="/signup/new" id="click3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
                                     fill="none" role="img" class="icon ">
                                     <path
@@ -142,7 +143,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <a title="Get in touch" class="btn2" id="openModalBtn">
+                        <a title="Get in touch" class="btn2" id="openModalBtn" >
                             <span>Get in touch</span>
                         </a>
                         <!-- <a title="Get in touch" class="btn2  btn2--circle" href="/signup/new"> -->
@@ -226,7 +227,7 @@
             <div class="user-details-section">
                 <div class="user-avatar-container">
                     <span class="user-avatar-line"></span>
-                    <a class="url" rel="contact" title="Unfold" href="/unfold">
+                    <a class="url" rel="contact" title="Unfold" href="#">
                         <picture>
                             <img class="photo" alt="Unfold"
                                 src="https://cdn.dribbble.com/users/17543311/avatars/small/c9c68958672969d58b038cf8d2447c05.png?1694804202">
@@ -235,18 +236,19 @@
                     <span class="user-avatar-line"></span>
                 </div>
                 <a class="user-name" rel="contact" href="/unfold">Unfold</a>
-                <a title="Get in touch" class="btn2  " href="/signup/new">
+                <a title="Get in touch" class="btn2" id="openModalBtn">
                     <span>Get in touch</span>
                 </a>
             </div>
+            <!-- More flashcard -->
             <div class="more-by-user-section">
                 <div class="more-by-heading-container">
                     <h4>More by Unfold</h4>
                     <a href="/unfold">View profile</a>
                 </div>
-                <div class="more-by-thumbnails-container js-more-by snipcss0-3-100-104 lazyloaded snipcss-Wnfan">
+                <div class="more-by-thumbnails-container ">
                     <div class="more-by-shot-thumbnail">
-                        <li id="screenshot-21444575" data-thumbnail-id=""
+                        <li
                             class="shot-thumbnail js-thumbnail shot-thumbnail-container">
                             <div
                                 class="js-thumbnail-base shot-thumbnail-base disabled-shot-section dribbble-shot dribbble  ">
@@ -272,7 +274,7 @@
                                         <ul class="js-dribbble-shot-actions shot-actions-container">
                                             <li class="shot-action">
                                                 <a class="bucket-shot btn2 btn2--circle btn2--secondary-alt"
-                                                    title="Save shot" href="/signup/new">
+                                                    title="Save shot" id="click1">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         viewBox="0 0 16 16" fill="none" role="img" class="icon ">
                                                         <path
@@ -282,9 +284,9 @@
                                                     </svg>
                                                 </a>
                                             </li>
-                                            <div class="like-action-21444575   shot-action">
+                                            <div class="like-action">
                                                 <a class="btn2 btn2--secondary-alt btn2--circle btn2--secondary-alt tipsy-mobile-disabled like-shot"
-                                                    rel="no-follow" title="Like this shot" href="/signup/new">
+                                                    rel="no-follow" title="Like this shot" id="click1">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         viewBox="0 0 16 16" fill="none" role="img" class="icon ">
                                                         <path
@@ -329,7 +331,7 @@
                                         <span class="accessibility-text">Shot Link</span>
                                     </a>
                                 </div>
-                                <a class="shot-thumbnail-link dribbble-link js-shot-link" data-turbo="true"
+                                <a class="shot-thumbnail-link " data-turbo="true"
                                     data-shot-thumbnail-link=""
                                     href="https://dribbble.com/shots/21352128-Unfold-Academy-Landing-Page">
                                     <span class="accessibility-text">View Unfold</span>
@@ -340,8 +342,7 @@
                                         <ul class="js-dribbble-shot-actions shot-actions-container">
                                             <li class="shot-action">
                                                 <a class="bucket-shot btn2 btn2--circle btn2--secondary-alt"
-                                                    title="Save shot" data-signup-trigger="true" data-href="/signup/new"
-                                                    data-context="bucket-shot" href="/signup/new">
+                                                    title="Save shot" id="click1">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         viewBox="0 0 16 16" fill="none" role="img" class="icon ">
                                                         <path
@@ -353,8 +354,7 @@
                                             </li>
                                             <div class="like-action-21352128   shot-action">
                                                 <a class="btn2 btn2--secondary-alt btn2--circle btn2--secondary-alt tipsy-mobile-disabled like-shot"
-                                                    title="Like this shot" data-href="/signup/new"
-                                                    data-context="like-shot" href="/signup/new">
+                                                    title="Like this shot" id="click1">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         viewBox="0 0 16 16" fill="none" role="img" class="icon ">
                                                         <path
@@ -372,9 +372,7 @@
                         </li>
                     </div>
                     <div class="more-by-shot-thumbnail">
-                        <li id="screenshot-21476886" class="shot-thumbnail js-thumbnail shot-thumbnail-container    "
-                            data-ad-data="" data-boost-id="" data-is-boost-fallback="" data-request-source=""
-                            data-track-location="Shot">
+                        <li id="screenshot-21476886" class="shot-thumbnail js-thumbnail shot-thumbnail-container">
                             <div
                                 class="js-thumbnail-base shot-thumbnail-base disabled-shot-section dribbble-shot dribbble  ">
                                 <figure class="js-thumbnail-placeholder shot-thumbnail-placeholder">
@@ -401,8 +399,7 @@
                                         <ul class="js-dribbble-shot-actions shot-actions-container">
                                             <li data-bucket-container="true" class="shot-action">
                                                 <a class="bucket-shot btn2 btn2--circle btn2--secondary-alt"
-                                                    title="Save shot" data-signup-trigger="true" data-href="/signup/new"
-                                                    data-context="bucket-shot" href="/signup/new">
+                                                    title="Save shot" id="click1">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         viewBox="0 0 16 16" fill="none" role="img" class="icon ">
                                                         <path
@@ -414,8 +411,7 @@
                                             </li>
                                             <div class="like-action  shot-action">
                                                 <a class="btn2 btn2--secondary-alt btn2--circle btn2--secondary-alt tipsy-mobile-disabled like-shot"
-                                                    rel="no-follow" title="Like this shot" data-signup-trigger="true"
-                                                    data-href="/signup/new" data-context="like-shot" href="/signup/new">
+                                                    rel="no-follow" title="Like this shot" id="click1">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         viewBox="0 0 16 16" fill="none" role="img" class="icon ">
                                                         <path
@@ -462,8 +458,7 @@
                                         <ul class="js-dribbble-shot-actions shot-actions-container">
                                             <li data-bucket-container="true" class="shot-action">
                                                 <a class="bucket-shot btn2 btn2--circle btn2--secondary-alt"
-                                                    title="Save shot" data-signup-trigger="true" data-href="/signup/new"
-                                                    data-context="bucket-shot" href="/signup/new">
+                                                    title="Save shot" id="click1">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         viewBox="0 0 16 16" fill="none" role="img" class="icon ">
                                                         <path
@@ -475,8 +470,7 @@
                                             </li>
                                             <div class="like-action-24460030   shot-action">
                                                 <a class="btn2 btn2--secondary-alt btn2--circle btn2--secondary-alt tipsy-mobile-disabled like-shot"
-                                                    rel="no-follow" title="Like this shot" data-signup-trigger="true"
-                                                    data-href="/signup/new" data-context="like-shot" href="/signup/new">
+                                                    rel="no-follow" title="Like this shot" id="click1">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         viewBox="0 0 16 16" fill="none" role="img" class="icon ">
                                                         <path
@@ -497,6 +491,7 @@
             </div>
         </div>
     </div>
+    <!-- footer -->
     <div id="footer" class="footer-v2 js-site-footer footer-v2--loaded " data-footer-v2="" role="contentinfo">
         <div class="footer-v2__container">
             <div class="footer-v2__upper">
@@ -510,9 +505,9 @@
                     <span class="accessibility-text">Back to home page</span>
                 </a>
                 <ul class="footer-v2__links">
-                    <li><a class="footer-v2__link" href="/for-designers">For designers</a></li>
-                    <li><a class="footer-v2__link" href="/hiring">Hire talent</a></li>
-                    <li><a class="footer-v2__link" href="/shots/popular">Inspiration</a></li>
+                    <li><a class="footer-v2__link" href="https://dribbble.com/for-designers">For designers</a></li>
+                    <li><a class="footer-v2__link" href="https://dribbble.com/hiring">Hire talent</a></li>
+                    <li><a class="footer-v2__link" href="https://dribbble.com/shots/popular">Inspiration</a></li>
                     <li><a class="footer-v2__link" href="/advertise">Advertising</a></li>
                     <li><a class="footer-v2__link" href="/stories">Blog</a></li>
                     <li><a class="footer-v2__link" href="/about">About</a></li>
@@ -580,14 +575,14 @@
             </div>
         </div>
     </div>
-    <!-- login -->
+    <!-- login-->
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <div class="sign-in-container">
                 <div class="sign-in-box">
                     <a id="crosss" href="">X</a>
-                    <div class="signup-content" id="authentication-modal-form">
+                    <div class="signup-content" >
                         <svg xmlns="http://www.w3.org/2000/svg" width="210" height="59" viewBox="0 0 210 59" fill="none"
                             class="signup-content__logo-svg ">
                             <title>Dribbble: the community for graphic design</title>

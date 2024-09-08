@@ -4,47 +4,45 @@ var modal = document.getElementById("myModal");
 var btn = document.getElementById("openModalBtn"); 
 var span = document.getElementsByClassName("close")[0]; 
 
-
 burger.addEventListener('click', () => {
   navMenu.classList.toggle('active');
 });
 
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("openModalBtn");
-var span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function() {
+function openModal() {
     modal.style.display = "block";
 }
 
-span.onclick = function() {
+function closeModal() {
     modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
 }
 
 var modal = document.getElementById("myModal");
-var btn = document.getElementById("openModalBtn");
 var span = document.getElementsByClassName("close")[0];
+span.onclick = closeModal;
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        closeModal();
+    }
+}
+
+var openModalButtons = document.querySelectorAll('[id^="openModalBtn"]');
+
+openModalButtons.forEach(button => {
+    button.addEventListener('click', openModal);
+});
+
 var modalContent = document.getElementsByClassName("modal-content")[0];
 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-modal.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
 modalContent.onclick = function(event) {
-  event.stopPropagation(); 
+    event.stopPropagation();
 }
+
+const followButtons = document.querySelectorAll('#click1, #click2, #click3, #click4, #click5');
+
+followButtons.forEach(button => {
+    button.addEventListener('click', (event) => {
+        event.preventDefault(); 
+        alert('You need to SignIn First!!');
+    });
+});
