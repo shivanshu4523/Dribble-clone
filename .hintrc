@@ -25,6 +25,7 @@
       {
         "link-name": "off"
       }
-    ]
+    ],
+    "axe/parsing": "off"
   }
 }
