@@ -45,3 +45,7 @@ followButtons.forEach(button => {
         alert('You need to SignIn First!!');
     });
 });
+
+document.getElementById('googleSignUp').onclick = function() {
+    alert('SignIn with Google Requires Backend Connectivity!');
+};
